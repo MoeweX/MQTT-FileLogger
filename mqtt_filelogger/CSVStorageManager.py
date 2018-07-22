@@ -20,7 +20,7 @@ class CSVStorageManager:
 
     def save_message(self, topic, message):
         self.__lock.acquire()
-        LOG.debug("Saving message with topic {0}".format(topic))
+        LOG.info("Saving message with topic {0}".format(topic))
         try:
             file = self.__get_file(topic)
             now = datetime.datetime.now()

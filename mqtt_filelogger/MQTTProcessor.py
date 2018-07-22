@@ -13,7 +13,7 @@ class MQTTProcessor(object):
     def __init__(self, csv_storage_manager):
         self.__csv_storage_manager = csv_storage_manager
 
-        self.__client = mqtt.Client("RemoteSwitchBricklet", clean_session=False)
+        self.__client = mqtt.Client("MQTTProcessor", clean_session=False)
         self.__client.connect(CONFIG.broker_address)
 
         self.__client.on_message = self.__on_message
