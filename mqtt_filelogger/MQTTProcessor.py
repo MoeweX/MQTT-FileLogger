@@ -10,8 +10,6 @@ LOG = logging.getLogger(__name__)
 
 class MQTTProcessor(object):
 
-    __csv_storage_manager: CSVStorageManager
-
     def __init__(self, csv_storage_manager):
         self.__csv_storage_manager = csv_storage_manager
 
