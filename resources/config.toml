@@ -1,0 +1,5 @@
+[mqtt]
+broker_address = "ubuntuMini.local"
+
+[csv]
+base_directory_path = "../logs/"
