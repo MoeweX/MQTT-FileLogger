@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name="TinkerforgeRemoteSwitch",
+    name="MQTT-FileLogger",
     version="0.0.1",
     python_requires='>3.6.0',
     packages=["mqtt_filelogger"],
